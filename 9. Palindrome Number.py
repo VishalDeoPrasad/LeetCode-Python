@@ -25,11 +25,12 @@ class Solution(object):
         return rev_n
     
     def isPalindrome(self, x):
+        X = x
         if x < 0:
             return "false"
         rev_x = self.number_reverse(x)
-        return "true" if x == rev_x else "false"
+        return X == rev_x
         
 
-print(Solution().isPalindrome(1101))
+print(Solution().isPalindrome(101))
 
