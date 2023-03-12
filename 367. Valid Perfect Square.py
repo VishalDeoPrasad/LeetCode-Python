@@ -4,7 +4,7 @@ class Solution:
     def solve1(self, A):
         for i in range(1, A):
             if i == A/i:
-                return i, True
+                return A/i, True
         return 0, False
     
     #idea 2 - Brute Force slightly better then previous
@@ -31,5 +31,5 @@ class Solution:
                 high = mid - 1
         return False
     
-print(Solution().solve(625))
+print(Solution().solve1(1))
         
