@@ -16,7 +16,7 @@ class Solution:
                 return t[i]
         return t[-1]
     
-    def findTheDifference(self, s, t):
+    def findTheDifference3(self, s, t):
         s_dic = {}
         for ch in s:
             if ch not in s_dic:
@@ -30,6 +30,16 @@ class Solution:
             else:
                 if t.count(ch) != s_dic[ch]:
                     return ch
+                
+    def findTheDifference(self, s, t):
+        s_sum = 0
+        t_sum = 0
+        for ch in s:
+            s_sum += ord(ch)
+        for ch in t:
+            t_sum += ord(ch)
+        
+        return chr(t_sum-s_sum)
             
     
             
