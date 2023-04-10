@@ -11,5 +11,5 @@ class Solution(object):
             else:
                 game.append(str(i))
         return game
-
+ 
 print(Solution().fizzBuzz(5))
